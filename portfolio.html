@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Eka Pratama Rudi Putra — Portfolio</title>
+  <meta name="Eka Pratama" content="Portfolio Eka Pratama Rudi Putra — profil, keahlian, pendidikan & pengalaman, kontak">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --surface:#f7f7f9; --text:#0f1720; --muted:#6b6f76; --accent:#0b74de;
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; color:var(--text); background:var(--bg); -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; line-height:1.5; padding:32px 20px;
+    }
+    .wrap{max-width:var(--maxw); margin:0 auto}
+
+    header{display:flex; align-items:center; gap:20px; padding:18px; background:var(--surface); border-radius:12px}
+    img.avatar{width:96px; height:96px; border-radius:12px; object-fit:cover;}
+    h1{margin:0; font-size:22px}
+    p.lead{margin:6px 0 0; color:var(--muted); font-size:14px}
+
+    main{display:grid; grid-template-columns:1fr; gap:18px; margin-top:20px}
+    .card{background:var(--surface); padding:18px; border-radius:12px}
+
+    @media(min-width:900px){
+      main{grid-template-columns:1fr 360px}
+      header{padding:22px}
+    }
+
+    .section-title{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px}
+    .section-title h2{margin:0; font-size:16px}
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{background:white; padding:6px 10px; border-radius:999px; font-size:13px; border:1px solid #e6e9ee}
+
+    .edu, .exp{display:flex; flex-direction:column; gap:10px}
+    .item{padding:10px; background:linear-gradient(180deg,rgba(255,255,255,0.7),transparent); border-radius:8px; border:1px solid rgba(0,0,0,0.04)}
+    .item h3{margin:0; font-size:15px}
+    .item small{color:var(--muted)}
+
+    .contact-form{display:flex; flex-direction:column; gap:10px}
+    input[type=text], input[type=email], textarea{width:100%; padding:10px; border-radius:8px; border:1px solid #e6e9ee; font-size:14px}
+    button{background:var(--accent); border:0; color:white; padding:10px 14px; border-radius:8px; cursor:pointer; font-weight:600}
+    footer{margin-top:20px; text-align:center; color:var(--muted); font-size:13px}
+
+    .muted{color:var(--muted)}
+    a.link{color:var(--accent); text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="foto.jpg" alt="Eka Pratama Rudi Putra" class="avatar">
+      <div>
+        <h1>Eka Pratama Rudi Putra</h1>
+        <p class="lead">Mahasiswa Teknik Elektro — Fokus: Telekomunikasi & Keamanan Jaringan</p>
+        <p class="muted" style="margin-top:8px; font-size:13px">Malang, Indonesia • Email: <a class="link" href="mailto:pratamaeka91283@gmail.com">pratamaeka91283@gmail.com</a></p>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section class="card">
+          <div class="section-title"><h2>Profil Singkat</h2></div>
+          <p>Saya adalah mahasiswa Teknik Elektro Politeknik Negeri Malang dengan fokus pada sistem telekomunikasi dan keamanan jaringan. Minat utama saya adalah penerapan machine learning untuk deteksi dan mitigasi serangan siber, khususnya pada infrastruktur cloud.</p>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Keahlian</h2></div>
+          <div class="skills">
+            <div class="chip">Analisis Jaringan</div>
+            <div class="chip">Machine Learning</div>
+            <div class="chip">Google Cloud Platform</div>
+            <div class="chip">Intrusion Detection System</div>
+            <div class="chip">VoIP</div>
+            <div class="chip">Python</div>
+            <div class="chip">QGIS</div>
+            <div class="chip">LaTeX</div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Proyek & Publikasi</h2></div>
+          <div class="edu">
+            <div class="item">
+              <h3>Deteksi dan Mitigasi Serangan DDoS pada Infrastruktur Telekomunikasi berbasis Google Cloud</h3>
+              <small>2025 — Skripsi / Proyek Penelitian</small>
+              <p style="margin:8px 0 0; font-size:14px" class="muted">Mengembangkan sistem deteksi berbasis machine learning untuk menganalisis trafik VoIP dan mengaktifkan mitigasi otomatis menggunakan firewall di Google Cloud.</p>
+            </div>
+            <div class="item">
+              <h3>Perancangan Link Komunikasi Radio di Wilayah Malang</h3>
+              <small>2024 — Proyek Tugas Akhir Praktikum</small>
+              <p class="muted" style="margin-top:6px">Mendesain jaringan microwave dengan tiga tower (UB, Batu, Kepanjen) menggunakan QGIS dan frekuensi 11 GHz untuk evaluasi redaman ruang bebas, redaman hujan, dan fading.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h2>Pendidikan</h2></div>
+          <div class="edu">
+            <div class="item">
+              <h3>Politeknik Negeri Malang</h3>
+              <small>Teknik Elektro — 2021–now</small>
+            </div>
+            <div class="item">
+              <h3>SMA National Media Center</h3>
+              <small>2019–2022</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Pengalaman</h2></div>
+          <div class="exp">
+            <div class="item">
+              <h3>Magang — CV. Dian's Print</h3>
+              <small>2023</small>
+              <p class="muted" style="margin-top:6px"> Berperan langsung sebagai editor desain produk secara berkala</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Kontak</h2></div>
+          <p class="muted">Kirim pesan cepat menggunakan formulir di bawah ini.</p>
+          <form id="contact" class="contact-form" onsubmit="return sendMail(event)">
+            <input type="text" id="name" placeholder="Nama" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" rows="4" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+          <p style="margin-top:10px; font-size:13px" class="muted">Atau kirim langsung ke: <a class="link" href="mailto:pratamaeka91283@gmail.com">pratamaeka91283@gmail.com</a></p>
+        </div>
+
+        <div class="card" style="margin-top:14px; text-align:center">
+          <a class="link" href="CV Eka Pratama.pdf" download style="display:inline-block; margin-top:6px">Unduh CV / Resume (PDF)</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© <span id="2025"></span> Eka Pratama Rudi Putra — Portfolio</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('2025').textContent = new Date().getFullYear();
+    function sendMail(e){
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('Eka Pratama').value);
+      const email = encodeURIComponent(document.getElementById('pratamaeka91283@gmail.com').value);
+      const message = encodeURIComponent(document.getElementById('message').value);
+      const subject = encodeURIComponent('Pesan dari Portfolio — ' + name);
+      const body = encodeURIComponent('Nama: Eka Pratama' + decodeURIComponent(name) + '\nEmail: pratamaeka91283@gmail.com' + decodeURIComponent(email) + '\n\n') + message;
+      const mailto = `mailto:pratamaeka91283@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+      return false;
+    }
+  </script>
+</body>
+</html>
